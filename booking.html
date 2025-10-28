@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Book Vehicle Service</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Book a Service Slot</h2>
+  <form action="/cgi-bin/book.exe" method="post">
+    <label for="name">Customer Name</label>
+    <input type="text" name="name" placeholder="Enter full name" required>
+
+    <label for="vehicleNo">Vehicle Number</label>
+    <input type="text" name="vehicleNo" placeholder="e.g., MH12AB1234" required>
+
+    <label for="date">Preferred Service Date</label>
+    <input type="date" name="date" required>
+
+    <label for="serviceType">Service Type</label>
+    <select name="serviceType">
+      <option value="General Service">General Service</option>
+      <option value="Oil Change">Oil Change</option>
+      <option value="Tire Replacement">Tire Replacement</option>
+      <option value="Battery Check">Battery Check</option>
+      <option value="Full Body Wash">Full Body Wash</option>
+    </select>
+
+    <button type="submit">Confirm Booking</button>
+  </form>
+
+  <p><a href="index.html">← Back to Home</a></p>
+</body>
+</html>
